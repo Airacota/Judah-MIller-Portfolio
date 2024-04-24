@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+        
+            
+            <body>
+                
+              <header>
+                <nav class="navbar">
+                  <div class="brand-title"><a href="https://jimiller@wcet.waketech.edu/jimiller/WEB287/Web-ePortfolio/Homepage.html">Judah Portfolio</a></div>
+                  <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </a>
+                  <div class="navbar-links">
+                    <ul>
+                      <li><a href="https://wcet.waketech.edu/jimiller/WEB287/Web-ePortfolio/AboutMe.html">About Me</a></li>
+                      <li><a href="https://wcet.waketech.edu/jimiller/WEB287/Web-ePortfolio/Resume.html">Resume</a></li>
+                      <li><a href="https://jimiller@wcet.waketech.edu/jimiller/WEB287/Web-ePortfolio/Projects.html">Projects</a></li>
+                      <li><a href="https://wcet.waketech.edu/jimiller/WEB287/Web-ePortfolio//Contact%20Me.html">Contact Me</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </header>
+
+                <div class="row-outer">
+                    <div class="container">
+                      <div class="animated-heading">
+                        <h1>Judah Miller &nbsp</h1>
+                        <h1> is a <span id="words">Web Developer</span></h1>
+                      </div>
+                    </div>
+                  </div>
+
+
+               
+
+                  <script type="text/javascript">
+                    (function () {
+                      var words = ["Web Developer","Web Designer","Progammer","Tech Enjoyer"],
+                      i = 0;
+                      setInterval(function(){ $('#words').fadeOut(function(){
+                          $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                        }); }, 3000)
+                    })();
+
+                    var menulist = document.getElementById("menulist");
+                    menulist.style.maxHeight = "0px";
+                      function togglemenu(){
+                        if(menulist.style.maxHeight == "0px")
+                        {
+                          menulist.style.maxHeight = "130px"
+                        }
+                        else
+                        {
+                          menulist.style.maxHeight = "0px"
+                        }
+                      }
+                  </script>
+            
+          
+
+                <style>
+                    body{background-image: url('images/pexels-photo-circuit.png');}                  
+                </style>
+
+
+                <footer>
+                    <p>Copyright © Judah Miller 2024<br>
+                    <a href="jimiller@my.waketech.edu">jimiller@my.waketech.edu</a></p>
+                </footer>
+          
+        </body>
+</html>
+    
